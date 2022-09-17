@@ -6,71 +6,107 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="Java Script, Junior, CV">
     <meta name="description" content="Here are CV of Maksim Rus">
+    <link rel="stylesheet" href="styles.css">
     <title>CV Maksim Rus</title>
 </head>
 <body>
-    <img src="Avatar.jpg" alt="Maksim rus" width="200"> 
 
-    <h1>Maksim Rus</h1>
-    <br>
+    <div class="conteiner">
+        <div class="info">
+        <img src="Avatar.jpg" alt="Maksim rus" class="avatar">
+            
+        <div class="info-text">
+        <h1>Maksim Rus</h1>
 
-    <p>I'm a family man. I have a <strong>wife</strong> and little <strong>boy</strong>.</p>
-    <p>We want to live in a <em>peaceful place</em>. We need to change our life.</p>
-    <p>And that's why I start to <em>learning coding</em>.</p>
+        <p>I'm a family man. I have a <strong>wife</strong> and little <strong>boy</strong>.</p>
+        <p>We want to live in a <em>peaceful place</em>. We need to change our life.</p>
+        <p>And that's why I start to <em>learning coding</em>.</p>
 
-    <p><strong>Social:</strong></p>
-    <a href="https://www.linkedin.com/in/maksim-rus-0b746b1a0/" target="_blank">Linkedin</a>
-    ¤
-    <a href="https://www.instagram.com/creamrus/" target="_blank">Instagram</a>
-    ¤
-    <a href="https://www.youtube.com/channel/UC554FBZ3khGvxa3Srf9_tOw" target="_blank">Youtube</a>
+        <h3>Social links:</h3>
 
-    <h3>Hobby</h3>
+        <a href="https://www.linkedin.com/in/maksim-rus-0b746b1a0/" target="_blank">Linkedin</a>
+        ¤
+        <a href="https://www.instagram.com/creamrus/" target="_blank">Instagram</a>
+        ¤
+        <a href="https://www.youtube.com/channel/UC554FBZ3khGvxa3Srf9_tOw" target="_blank">Youtube</a>
+        </div>
+        </div>
 
-    <ol>
-        <li>Cycling</li>
-        <li>Swimming</li>
-        <li>Traveling</li>
-        <li>Electric transport</li>
-    </ol>
+        <div class="card bg-milk">
+            <h3>Hobby</h3>
 
-    <h3>Work experience</h3>
+            <ol class="list">
+                <li>Cycling</li>
+                <li>Swimming</li>
+                <li>Traveling</li>
+                <li>Electric transport</li>
+            </ol>
+        </div>
 
-    <table>
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Position</th>
-                <th>Years</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Invelum</td>
-                <td>Storekeeper</td>
-                <td>2018-present time</td>
-            </tr>
-            <tr>
-                <td>Great Moving Sweden AB</td>
-                <td>Mover</td>
-                <td>2018-2019</td>
-            </tr>
-            <tr>
-                <td>Allt i Transport</td>
-                <td>Track Driver</td>
-                <td>2018-2019</td>
-            </tr>
-            <tr>
-                <td>Clear Channel</td>
-                <td>Afichering</td>
-                <td>2017-2017</td>
-            </tr>
-            <tr>
-                <td>MED AVSIKT AB</td>
-                <td>Takarbetare</td>
-                <td>2017-2017</td>
-            </tr>
-        </tbody>
-    </table>
+        <div class="card bg-green">
+            <h3>Work experience</h3>
+
+            <table class="table">
+                <!-- <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Position</th>
+                        <th>Years</th>
+                    </tr>
+                </thead> -->
+                <tbody>
+                    <tr>
+                        <td>Invelum</td>
+                        <td>Storekeeper</td>
+                        <td>2018-present time</td>
+                    </tr>
+                    <tr>
+                        <td>Great Moving Sweden AB</td>
+                        <td>Mover</td>
+                        <td>2018-2019</td>
+                    </tr>
+                    <tr>
+                        <td>Allt i Transport</td>
+                        <td>Track Driver</td>
+                        <td>2018-2019</td>
+                    </tr>
+                    <tr>
+                        <td>Clear Channel</td>
+                        <td>Afichering</td>
+                        <td>2017-2017</td>
+                    </tr>
+                    <tr>
+                        <td>MED AVSIKT AB</td>
+                        <td>Takarbetare</td>
+                        <td>2017-2017</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <form action="/" class="form">
+            <h3>Contact</h3>
+            
+            <div class="form-row">
+
+                <div class="form-group">
+                    <label for="name">Your name:</label>
+                    <input type="text" id="name" placeholder="Name only">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Your email:</label>
+                    <input type="text" id="email">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Your message:</label>
+                <textarea id="message" cols="20" rows="5"></textarea>
+            </div>
+
+            <input class="btn" type="submit" value="Send!">
+        </form>
+    </div>
 </body>
 </html>
